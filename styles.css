@@ -1,0 +1,351 @@
+/* General */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto";
+}
+
+body {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* Event presentation */
+#about-container {
+   flex: 1.4;
+   padding: 32px 64px;
+}
+
+#brand {
+   display: flex;
+   align-items: center;
+   font-size: 12px;
+   margin-bottom: 16px;
+}
+
+#about-container h2 {
+   font-size: 36px;
+   max-width: 500px;
+   margin-bottom: 16px;
+}
+
+#brand {
+   display: flex;
+   align-items: center;
+   font-size: 12px;
+   margin-bottom: 16px;
+}
+
+#brand img {
+   height: 50px;
+   margin-right: 9.6px;
+}
+
+#exclusive {
+   text-transform: uppercase;
+   color: #0075ff;
+   font-weight: bold;
+   font-size: 14.4px;
+   margin-bottom: 16px;
+}
+
+#about-container h2 {
+   font-size: 36px;
+   max-width: 500px;
+   margin-bottom: 16px;
+}
+
+#date {
+   text-transform: uppercase;
+   color: #aaa;
+   margin-bottom: 16px;
+}
+
+#description {
+   max-width: 500px;
+   margin-bottom: 16px;
+   line-height: 21.6px;
+}
+
+#about-container h4 {
+   font-size: 21.6px;
+   margin-bottom: 16px;
+}
+
+#users-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 16px;
+}
+
+.user-card {
+   border: 2px solid #ccc;
+   padding: 16px;
+   text-align: center;
+}
+
+.user-card img {
+   width: 120px;
+   border-radius: 50%;
+   margin-bottom: 16px;
+}
+
+.user-card .user-name {
+   font-weight: bold;
+   margin-bottom: 9.6px;
+}
+
+.user-card .user-role {
+   color: #aaa;
+   font-size: 14.4px;
+}
+
+/* Formulary*/
+
+#form-container {
+
+   flex: 1;
+   background-image: url(images/pattern.png);
+   background-size: cover;
+   color: white;
+   margin-top: 38px;
+   margin-right: 56px;
+
+}
+
+#form-inner {
+   margin: 3rem;
+   padding: 3rem;
+   border: 2px solid white;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+}
+
+#form-inner h3 {
+
+   font-size: 2rem;
+   margin-bottom: 1rem;
+
+}
+
+
+
+#form-inner p {
+
+
+   margin-bottom: 1rem;
+}
+
+#register-form {
+
+   display: flex;
+   flex-direction: column;
+   gap: 0.8rem;
+   margin-bottom: 2rem;
+
+}
+
+#register-form input {
+   padding: 0.8rem 0.6rem;
+   border: none;
+   border-radius: 3px;
+
+}
+
+#email {
+
+
+   min-width: 100%;
+
+}
+
+#register-form input[type="submit"] {
+   background-color: transparent;
+   color: white;
+   border: 2px solid white;
+   font-weight: bold;
+   cursor: pointer;
+   width: 200px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#name-container {
+
+   display: flex;
+   gap: 8px;
+
+}
+
+#register-form input[type="submit"]:hover {
+
+   background-color: white;
+   color: blue;
+
+
+}
+
+/* UL DESIGN */
+
+ul {
+   list-style-type: disc;
+   padding-left: 20px;
+   /* Ajuste o valor conforme necessário */
+   text-align: center;
+}
+
+ul li {
+   text-align: left;
+}
+
+#benefits h4 {
+
+   margin-bottom: 10px;
+   font-size: 18px;
+   font-weight: bold;
+
+}
+
+#benefits ul li {
+
+   margin-bottom: 5px;
+
+}
+
+#register-form input[type="submit"] {
+
+   outline: none;
+   transition: background-color 0.5s, color 0.4s;
+   font-size: 15px;
+}
+
+.container {
+   display: flex;
+   align-items: flex-start;
+   /* Align items to the top */
+}
+
+#benefits ul {
+   list-style-position: inside;
+
+}
+
+.container {
+   display: flex;
+   align-items: flex-start;
+   /* Alinhar os itens ao topo */
+}
+
+#form-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   /* Ajuste o valor conforme necessário */
+}
+
+/* responsive */
+@media (max-width: 500px) {
+   body {
+      flex-direction: column;
+   }
+
+   #about-container {
+      padding: 32px;
+      padding-bottom: 0;
+   }
+
+   #about-container h2 {
+      font-size: 40px;
+   }
+
+   #exclusive {
+      font-size: 20px;
+   }
+
+   #date {
+      font-size: 25px;
+   }
+
+   #description {
+      font-size: 16px;
+      line-height: 22px;
+   }
+
+   #about-container h4 {
+      font-size: 20px;
+   }
+
+   #users-container {
+      flex-direction: column;
+   }
+
+   .user-card {
+      width: 100%;
+      padding: 32px;
+   }
+
+   .user-card img {
+      width: 180px;
+   }
+
+   .user-card .user-name {
+      font-size: 22px;
+   }
+
+   .user-card .user-role {
+      font-size: 20px;
+   }
+
+   #form-inner {
+      margin: 32px;
+      padding: 32px;
+   }
+
+   #register-form,
+   #name-container {
+      gap: 10px;
+   }
+
+   #form-container {
+      flex: 1;
+      background-image: url(images/pattern.png);
+      background-size: cover;
+      color: white;
+      margin-top: 38px;
+      margin-right: 0px;
+   }
+
+   #brand {
+      font-size: medium;
+
+
+
+   }
+
+   #brand img {
+      height: 65px;
+
+   }
+
+   #description {
+
+      font-size: 22px;
+   }
+
+   #about-container h4 {
+      font-size: 25px;
+      margin-top: 20px;
+   }
+
+  
+
+
+  
+   
+}
